@@ -1,3 +1,7 @@
 body {
   text-align:center;
 }
+.dataTitle{
+  cursor: pointer;
+  font-size: 24px;
+}
