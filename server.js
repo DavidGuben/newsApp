@@ -1,10 +1,14 @@
+// Dependencies
 var express = require('express');
-var app = express();
-
 var request = require('request');
 var cheerio = require('cheerio');
-
 var mongojs = require('mongojs');
+var app     = express();
+
+// static folder
+app.use(express.static('public'));
+
+// Database setup
 var databaseUrl = 'scraper';
 var collections = ["scrapedData"];
 
@@ -15,7 +19,7 @@ db.on('error', function(err) {
 
 //main route
 app.get('/', function(req, res) {
-  res.send('Hello world');
+  res.send(index.html);
 });
 
 // gets data and sends to browser
