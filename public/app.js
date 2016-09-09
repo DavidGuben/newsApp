@@ -6,7 +6,7 @@ $( document ).ready(function() {
         console.log(data[i]);
         $('#results').append(
           '<p data-id='+data[i]._id+'><span class="dataTitle">'+data[i].title+'</span></p>'+
-          '<a href='+data[i].link+'data-id='+data[i]._id+'><span class="dataLink">'+data[i].link+'</span></p>'
+          '<a target="_blank"href='+data[i].link+'data-id='+data[i]._id+'><span class="dataLink">'+data[i].link+'</span></p>'
         );
       }
     });
