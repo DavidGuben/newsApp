@@ -28,6 +28,7 @@ app.get('/all', function(req, res){
     }
   });
 });
+
 // web scraping route that takes data from a site and places it in mongodb
 app.get('/scrape', function(req, res) {
   request('https://news.ycombinator.com/', function(error, response, html){
@@ -50,7 +51,7 @@ app.get('/scrape', function(req, res) {
       }
     });
   });
-    res.send('Scrape Complete' + saved);
+    res.send('Scrape Complete');
   });
 
   app.listen('3000', function() {
