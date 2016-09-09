@@ -1,7 +1,18 @@
-body {
-  text-align:center;
+h1 {
+  text-align: center;
+  margin-bottom:50px;
 }
+
 .dataTitle{
   cursor: pointer;
   font-size: 24px;
+}
+
+.boxStyle {
+  margin-left:100px;
+  margin-bottom:30px;
+  width: 300px;
+  height:200px;
+  padding: 2px;
+  border-bottom: 2px solid blue;
 }
