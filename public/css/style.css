@@ -1,5 +1,11 @@
-h1 {
+body{
   text-align: center;
+}
+.logo {
+  text-align: center;
+  width:219px;
+  height:81px;
+  margin-top: 20px;
   margin-bottom:50px;
 }
 
@@ -9,10 +15,19 @@ h1 {
 }
 
 .boxStyle {
-  margin-left:100px;
+  margin-left:35px;
   margin-bottom:30px;
   width: 300px;
   height:200px;
   padding: 2px;
   border-bottom: 2px solid blue;
+}
+
+.boxStyle:hover {
+  margin-left:35px;
+  margin-bottom:30px;
+  width: 300px;
+  height:200px;
+  padding: 2px;
+  border-bottom: 4px solid blue;
 }
