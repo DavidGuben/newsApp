@@ -1,4 +1,5 @@
 body{text-align: center;}
+html {overflow: -moz-scrollbars-vertical;overflow-y: scroll;}
 
 .logo {
   text-align: center;
@@ -34,5 +35,5 @@ body{text-align: center;}
 }
 
 #intro {
-  margin:0 auto;
+  background-color: #fff;
 }
