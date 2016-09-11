@@ -3,14 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <title>News.js</title>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
   <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+  <div id="container">
   <img class="logo" src="imgs/news.png"/><br/>
+  <div id="intro" class="jumbotron">
+    <h3>Welcome to news.js. This site simply scrapes websites for current news and displays them here for you to access all in one place. The article will open in a new page so you can come back here and view other articles.</h3>
   <div class="row">
-    <div id="results"></div>
+    </div>
+    <button id="showArticles" class="btn btn-primary">Show articles</button>
+    <div id="results" hidden="true"></div>
+  </div>
   </div>
   <script src="app.js"></script>
 </body>

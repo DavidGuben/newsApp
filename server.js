@@ -32,10 +32,9 @@ app.get('/all', function(req, res){
     }
   });
 });
-
 // web scraping route that takes data from a site and places it in mongodb
 app.get('/scrape', function(req, res) {
-  request('https://news.ycombinator.com/', function(error, response, html){
+  request('https://news.ycombinator.com/newest', function(error, response, html){
     var $ = cheerio.load(html);
     $('.title').each(function(i, element) {
       var title = $(this).children('a').text();
