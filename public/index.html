@@ -15,12 +15,11 @@
   <div id="intro" class="jumbotron">
     <h3>Welcome to news.js. This site simply scrapes websites for current news and displays them here for you to access all in one place. The article will open in a new page so you can come back here and view other articles.</h3>
   <div class="row">
-    </div>
-    <button id="showArticles" class="btn btn-primary">Show articles</button>
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-      Comments
-    </button>
+    <div id="buttonWrapper">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Comments</button>
+    <button id="showArticles" class="btn btn-primary">Show articles</button>
+  </div>
     <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
@@ -53,6 +52,7 @@
     <div id="results" hidden="true"></div>
   </div>
   </div>
+</div>
   <script src="app.js"></script>
 </body>
 </html>

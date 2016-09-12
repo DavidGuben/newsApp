@@ -29,7 +29,7 @@ html {overflow: -moz-scrollbars-vertical;overflow-y: scroll;}
   border-bottom: 5px solid blue;
 }
 
-#showArticles {
+#buttonWrapper {
   margin-bottom: 50px;
 }
 
