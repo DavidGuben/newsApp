@@ -17,11 +17,11 @@
   <div class="row">
     <!-- Button trigger modal -->
     <div id="buttonWrapper">
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Comments</button>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#commentModal">Comments</button>
     <button id="showArticles" class="btn btn-primary">Show articles</button>
   </div>
     <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade" id="commentModal" tabindex="-1" role="dialog" aria-labelledby="modalPop">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -29,18 +29,18 @@
             <h4 class="modal-title" id="myModalLabel">Leave a comment</h4>
           </div>
           <div class="modal-body">
-          <div id="userinput">
-            <input type="text" id="title"/>
-            <br/>
-            <p>Comments</p>
-            <textarea id="comment"></textarea>
-            <div id="buttons">
-              <div id="actionbutton">
-                <button id="makenew" class="btn">Submit</button>
+            <div id="userinput">
+              <input type="text" id="title"/>
+              <br/>
+              <p>Comments</p>
+              <textarea id="comment"></textarea>
+              <div id="buttons">
+                <div id="actionbutton">
+                  <button id="makenew" class="btn">Submit</button>
+                </div>
+                <div id="commentResults"></div>
               </div>
-              <div id="commentResults"></div>
-            </div>
-          </div><!--userinput end-->
+            </div><!--userinput end-->
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

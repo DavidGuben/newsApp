@@ -10,7 +10,7 @@ $( document ).ready(function() {
           '</span></p>'+
           '<a target="_blank"href='+data[i].link+'data-id='+data[i]._id+'><span class="dataLink">Go to article</span></p></div>'
         );
-        $('button').on('click', function() {
+        $('#showArticles').on('click', function() {
           $("#results").removeAttr("hidden");
         });
       }
