@@ -17,12 +17,15 @@ db.on('error', function(err) {
   console.log('database error: ', err )
 });
 
-//main route
+// ROUTES
+// ========================================
+
+//main route sends to index
 app.get('/', function(req, res) {
   res.send(index.html);
 });
 
-// gets data and sends to browser
+// gets scraped data and sends to browser in json format
 app.get('/all', function(req, res){
   db.scrapedData.find({}, function(err, found) {
     if (err) {
@@ -56,6 +59,20 @@ app.get('/scrape', function(req, res) {
     });
   });
     res.send('Scrape Complete');
+  });
+
+  // route for submitting comments
+  app.post('/submit', function(req, res) {
+    console.log(req.body);
+    // create and insert comments collection for mongodb
+    db.comments.insert(req.body, function(err, saved) {
+      if (err) {
+        console.log(err);
+      }
+      else{
+        res.send(saved);
+      }
+    });
   });
 
   app.listen('3000', function() {
